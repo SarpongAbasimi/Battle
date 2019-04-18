@@ -5,6 +5,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require './app'
+require 'features/web_helpers'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

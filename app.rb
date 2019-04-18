@@ -2,7 +2,6 @@ require 'sinatra/base'
 
 class Battle < Sinatra::Base
   get '/' do
-    @name = 'hey'
     erb :index
   end
 
