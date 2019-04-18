@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+    --Montserrat:'Montserrat', sans-serif;
+    --formradius: 15px;
+    --Roboto:'Roboto', sans-serif;
+}
+
+body{
+  background-image: url('./images/bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Css For Nav  */
+nav{
+  width: 100%;
+  background-color:#1F1F1F;
+  height: 50px;
+  display: flex;
+}
+
+nav #nav-ul{
+  align-self: center;
+  padding:20px;
+}
+
+nav #nav-ul li {
+  font-family: var(--Montserrat);
+  color: #F5EAEA;
+  list-style-type: none;
+  position: relative;
+  top: 5px;
+}
+
+/* Css For Home Form */
+#info_form {
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  top: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+#info_form .input-form{
+  border-radius: var(--formradius);
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+#info_form .input-form::placeholder{
+  color: #AAA8A8;
+  font-size: 12px;
+  font-family: var(--Roboto);
+}
+
+#info_form .sub{
+    position: relative;
+    left : 100px;
+    margin: 0 auto;
+    background-color: red;
+    width: 150px;
+}
+
