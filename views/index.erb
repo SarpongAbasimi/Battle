@@ -1,8 +1,7 @@
-
-<form method='post' action='./names'>
-  <label for='playerOne'>Player 1</label>
-  <input type='text' id='playerOne' name='Player1'>
-  <label for='playerTwo'>Player 2</label>
-  <input type='text' id='playerTwo' name='Player2'>
-  <input type='submit' name='Fight' value='Fight'>
+<form method='post' action='./names' id='info_form'>
+  <div class="form-group" class='form_container'>
+    <input type='text' id='playerOne' name='Player1' class="form-control input-form" placeholder='Player 1' required>
+    <input type='text' id='playerTwo' name='Player2' class="form-control input-form" placeholder='Player 2' required>
+  </div>
+    <input type='submit' name='Fight' value='Fight'  class='sub btn btn-danger btn-lg'>
 </form>
