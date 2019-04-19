@@ -24,6 +24,7 @@ class Battle < Sinatra::Base
   post '/attack' do
     @player_one_name = $Player1.name
     @player_two_name = $Player2.name
+    @player_one_Hp = $Player1.HP
     $Player1.attack($Player2)
     @player_two_HP = $Player2.HP
     erb :attack
