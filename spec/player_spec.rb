@@ -10,7 +10,7 @@ RSpec.describe Player do
 
     describe 'attack' do
       it 'reduces players HP by 10' do
-      expect{ player1.attack(player2) }.to change{ player2.HP }.by -10
+      expect{ player1.attack(player2) }.to change{ player2.HP }.by -100
       end
     end
   end
