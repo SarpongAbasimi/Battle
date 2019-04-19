@@ -1,7 +1,7 @@
 RSpec.feature 'Testing Infrastructure' do
   scenario 'Can run up and check page content' do
     sign_in_and_play
-    expect(page).to have_content('Goku vs Vegita')
+    expect(page).to have_content('Goku 8000')
   end
 end
 
