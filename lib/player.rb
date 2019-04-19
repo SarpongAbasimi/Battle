@@ -7,6 +7,6 @@ class Player
   end
 
   def attack(player)
-    player.HP -= 10
+    player.HP -= 100
   end
 end
