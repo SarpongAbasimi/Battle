@@ -10,7 +10,7 @@
 }
 
 body{
-  background-image: url('./images/bg.jpeg');
+  background-image: url('./images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -34,6 +34,16 @@ nav #nav-ul li {
   list-style-type: none;
   position: relative;
   top: 5px;
+}
+
+nav #nav-ul li a {
+  color: #F5EAEA;
+  text-decoration: none;
+  -webkit-transition: color 600mscubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav #nav-ul li a:hover {
+  color: red;
 }
 
 /* Css For Home Form */
@@ -81,13 +91,13 @@ nav #nav-ul li {
   background-size: contain;
   height: 100vh;
 }
-.plyaerImgContainer{
+.playerImgContainer{
   width: 200px;
   height: 200px;
   position: relative;
   top: 200px;
   left: 300px;
-  background-image: url(./images//goku.jpeg);
+  background-image: url(./images/goku.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -97,11 +107,10 @@ nav #nav-ul li {
   transition: opacity cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.plyaerImgContainer:hover{
+.playerImgContainer:hover{
   opacity: 0.9;
   border: 0.5px solid;
 }
-
 
 #playerOneName{
   position: absolute;
@@ -118,4 +127,57 @@ nav #nav-ul li {
 
 #playerOneName:hover{
   font-size: 22px;
+}
+
+.PlayerTwoImgContainer{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  background-image: url('./images/man.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+  transition: opacity cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: relative;
+  left: 900px;
+  transition: opacity cubic-bezier(0.39, 0.575, 0.565, 1);
+  font-family: var(--Roboto);
+}
+.PlayerTwoImgContainer:hover{
+  opacity: 0.9;
+  border: 0.5px solid;
+}
+
+#playerTwoName{
+  position: absolute;
+  width : 200px;
+  top: 460px;
+  left: 900px;
+  text-align: center;
+  font-family: var(--Roboto);
+  color: #FFFCFC;
+  font-weight: bold;
+  font-size: 20px;
+  transition: font-size 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#playerTwoName:hover{
+  font-size: 22px;
+}
+
+.attackButtonForm{
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+
+.attackButtonForm .attackButton{
+  position: relative;
+  width: 200px;
+  font-family: var(--Roboto);
+  border-radius: 10px;
+  left:20px;
 }
