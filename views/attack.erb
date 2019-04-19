@@ -1,3 +1,26 @@
-<h1> <%=@player_one_name %> just attacked <%= @player_two_name %>!</h1>
+<div class='play_container'>
+  <div class='playerImgContainer'></div>
+  <h1 id='playerOneName'>
+    <%= @player_one_name%> 
+    <span class='badge badge-success'>
+      <%=@player_one_Hp%>
+    </span> <br>
+    <span class='badge badge-dark'>
+      <%=@player_one_name %> 
+      just attacked 
+      <%= @player_two_name %>!
+    </span>
+  </h1>
+  <div class='PlayerTwoImgContainer'></div>
+  <h1 id='playerTwoName'>
+    <%= @player_two_name%> 
+    <span class='badge badge-success'>
+      <%=@player_two_HP%>
+    </span> 
+    <br>
+    <span class='badge badge-dark'>
+     Damn you <%= @player_one_name%>!.
+    </span>
+  </h1>
+</div>
 
-<h2><%= @player_two_name %> HP: <%= @player_two_HP%></h2>
