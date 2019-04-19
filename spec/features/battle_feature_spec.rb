@@ -24,6 +24,14 @@ RSpec.feature 'Players HP' do
   scenario 'Reduces player2s HP by 10' do
     sign_in_and_play
     click_button('Attack')
-    expect(page).to have_content('Vegita HP: 7900')
+    expect(page).to have_content('Vegita 7900')
+  end
+end
+
+RSpec.feature 'Players Dialogue' do
+  scenario 'Player2 talks to player1' do
+    sign_in_and_play
+    click_button('Attack')
+    expect(page).to have_content('Damn you Goku!.')
   end
 end
