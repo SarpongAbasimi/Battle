@@ -1,10 +1,11 @@
 <div class='play_container'>
-  <div class='plyaerImgContainer'></div>
+  <div class='playerImgContainer'></div>
   <h1 id='playerOneName'><%= @player_one_name%> <span class='badge badge-success'><%=@player_one_Hp%></span> </h1>
+  <div class='PlayerTwoImgContainer'></div>
+  <h1 id='playerTwoName'><%= @player_two_name%> <span class='badge badge-success'><%=@player_two_HP%></span> </h1>
 
-  <!--<h1><%= @player_one_name %> vs <%= @player_two_name %></h1>-->
-  <h2><%= @player_two_name %> HP: <%= @player_two_HP %></h2>
-  <form action = '/attack' method = 'post'>
-    <input type = "submit" value = "Attack">
+  <form action = '/attack' method = 'post' class='attackButtonForm'>
+    <input type = "submit" value = "Attack" class='btn btn-danger attackButton'>
   </form>
 </div>
+
